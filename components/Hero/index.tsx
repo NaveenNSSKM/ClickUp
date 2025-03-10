@@ -29,24 +29,30 @@ const Hero = () => {
             expert strategies.
           </p>
 
-          {/* Email Subscription Form */}
-          <div className="mt-6 w-full">
-            <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 md:flex-row md:items-start">
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                placeholder="Enter your email"
-                className="w-full max-w-md rounded-full px-5 py-3 text-black focus:outline-none md:w-80"
-              />
-              <button
-                aria-label="get started button"
-                className="w-full rounded-full bg-gradient-to-br from-blue-500 to-lime-500 px-6 py-3 text-lg font-medium text-black transition duration-300 hover:bg-yellow-300 md:w-auto"
-              >
-                Get Started
-              </button>
-            </form>
-          </div>
+       {/* Email Subscription Form */}
+{/* Email Subscription Form */}
+<div className="mt-6 w-full">
+  <form
+    onSubmit={handleSubmit}
+    className="flex w-full flex-row items-center gap-2 sm:flex-col sm:items-start md:flex-row md:items-start"
+  >
+    <input
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      type="email"
+      placeholder="Enter your email"
+      className="w-full flex-1 rounded-full px-4 py-3 text-black focus:outline-none"
+    />
+    <button
+      aria-label="get started button"
+      className="whitespace-nowrap rounded-full bg-gradient-to-br from-blue-500 to-lime-500 px-6 py-3 text-lg font-medium text-black transition duration-300 hover:bg-yellow-300"
+    >
+      Get Started
+    </button>
+  </form>
+</div>
+
+
         </div>
 
         {/* Right Side: Hero Image (Hidden on Mobile) */}

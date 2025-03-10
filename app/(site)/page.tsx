@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Click Up",
 
   // other metadata
-  description: "This is Home for Solid Pro"
+  description: "Click Up"
 };
 
 export default function Home() {
